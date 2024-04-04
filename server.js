@@ -1,12 +1,12 @@
 // Using require statements to include necessary modules
 const http = require('http');
-const app = require('./app'); // Make sure this module is correctly pointing to your app's entry point
+
 const port = process.env.PORT || 3000;
 
 const { Telegraf } = require('telegraf');
 
 // Using an environment variable for the token
-const TOKEN = process.env.BOT_TOKEN;
+const TOKEN = process.env.TOKEN;
 
 const bot = new Telegraf(TOKEN);
 
